@@ -1,0 +1,31 @@
+# Environment
+.env
+.env.*
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Craft CMS runtime
+/storage/*
+!/storage/.gitkeep
+
+# Do NOT commit backups
+/storage/backups/
+
+# Craft control panel resources
+/web/cpresources/
+
+# Logs
+*.log
+
+# Craft license
+/config/license.key
