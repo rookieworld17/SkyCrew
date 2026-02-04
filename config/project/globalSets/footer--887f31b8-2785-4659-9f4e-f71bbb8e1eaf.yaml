@@ -1,0 +1,173 @@
+fieldLayouts:
+  c2774fe4-fa4f-467c-871d-65ca23a5d7dc:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-02T15:26:48+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7cff06a0-49d2-439f-8751-325a9a315ad4 # Subline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 425e6db6-636a-49b3-ab43-189c110ec8a2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T15:26:48+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 31b75d2d-74d5-4701-8d7a-943a74cfff20
+            userCondition: null
+          -
+            dateAdded: '2026-01-02T15:26:48+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b40cb5cd-bd29-404f-88b7-47ca6d5716c6 # Useful Links Matrix
+            handle: usefulLinks
+            includeInCards: false
+            instructions: null
+            label: 'Useful Links'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aeacef5d-e503-47e8-aa95-d56763fc3845
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T15:26:48+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 04e14652-8d4b-4ecd-9676-bfc2c160b7df
+            userCondition: null
+          -
+            dateAdded: '2026-01-02T15:35:40+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 286b1e74-9501-4ae3-a6cb-ec6d2337c0f9 # Our Services Link Matrix
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fae5b5d1-2ccd-4b5a-a6ad-2a625e6ca333
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T15:40:32+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 15b26634-ad6e-439f-bee2-1dbbbd80fe0d
+            userCondition: null
+          -
+            dateAdded: '2026-01-02T15:40:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: street
+            includeInCards: false
+            instructions: null
+            label: Street
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efa9709c-55fa-46ff-a2b8-58287329e48b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T15:40:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: cityZip
+            includeInCards: false
+            instructions: null
+            label: 'City, ZIP'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9ecb276-cb32-4a6c-9277-25e64ef1289e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T15:40:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: state
+            includeInCards: false
+            instructions: null
+            label: State
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20720f5e-5219-4470-9ea0-a34155db511b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T15:40:32+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 46d1a95f-2265-4301-b930-921e1935030a
+            userCondition: null
+          -
+            dateAdded: '2026-01-02T15:40:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: phone
+            includeInCards: false
+            instructions: null
+            label: Phone
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ebe61ec8-ccd1-4d70-bc18-f1b66fd7df41
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T15:40:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: mail
+            includeInCards: false
+            instructions: null
+            label: E-Mail
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 559ccf2c-0706-4680-8bea-a88d70862b67
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 53ab4736-2d84-46f9-b3e8-867d39d7957b
+        userCondition: null
+handle: footer
+name: 'Footer Inhalt'
+sortOrder: 2

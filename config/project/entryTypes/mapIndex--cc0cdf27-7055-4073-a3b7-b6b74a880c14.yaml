@@ -1,0 +1,156 @@
+color: null
+description: null
+fieldLayouts:
+  5555b760-3095-4086-9322-3635c6289344:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-01-28T11:24:24+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d7984619-a5cb-4ed9-b995-876c7417931a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-28T11:32:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: subline
+            includeInCards: false
+            instructions: null
+            label: Subline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b5389f47-af02-47db-9270-fb0865db0a7e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 85b0fc58-facb-4d5f-a53a-fab6aa3a8b54
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-28T11:26:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 296332a3-c934-4760-8be1-1895f1a1fe6f # Content Matrix
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47a2a416-cb18-4ab6-83d4-153f3fd7b55a
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Weitere Inhalte'
+        uid: 480fb408-e99e-4d99-b961-53f2401d40e1
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-28T11:26:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c947ee1f-1a2b-430f-b94f-7ba51164ad18 # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3766f277-f5ae-4fe0-ae60-4d1b06d1cf8a
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: b4df9cc8-95e8-4027-b8d7-49e725e6cb0d
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-28T11:26:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 925715c8-d512-40ea-a170-bacb389108f2 # Nicht im Hauptmenu anzeigen
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e7a44960-a23d-4889-a3d7-be308d865d39
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-28T11:26:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 9de1bdc7-e7ff-48dc-b514-2f18c7fbdd93 # Im Footermenü anzeigen
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61d2d46c-6d91-4963-b877-699b5aa471e3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Optionen
+        uid: 5ad1ad63-1330-4211-93e5-594cefca738f
+        userCondition: null
+handle: mapIndex
+hasTitleField: true
+icon: map-location-dot
+name: 'Map Index'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

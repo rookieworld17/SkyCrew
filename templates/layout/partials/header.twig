@@ -1,0 +1,37 @@
+{% block header %}
+    {% import "_macros/nav.twig" as nav %}
+    {% import "_macros/image.twig" as img %}
+
+    {% set entries = [homepage]|merge(sites) %}
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="{{ homepage.getUrl() }}" class="logo d-flex text-decoration-none align-items-center me-auto">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                {% if global.logo is not empty %}
+                    {{ img.renderAsset(global.logo, {
+                        transform: {
+                            'width': 140,
+                            'height': 140
+                        }
+                    }) }}
+                {% endif %}
+                <h1 class="sitename">{{ 'SkyCrew'|t('site') }}</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    {{ nav.navItems(entries) }}
+                </ul>
+
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            {# TODO(FEATURE): Add Support #}
+            {#<a class="btn-getstarted" href="get-a-quote.html">Get a Quote</a>#}
+
+        </div>
+    </header>
+{% endblock %}

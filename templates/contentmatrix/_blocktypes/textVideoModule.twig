@@ -1,0 +1,55 @@
+{% if block is defined and block is not empty %}
+    {% import "_macros/image.twig" as img %}
+
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center order-lg-last order-first"
+                     data-aos="fade-up"
+                     data-aos-delay="200"
+                     data-video-wrap>
+                    <div class="video-box position-relative">
+                        {% if block.video is not empty %}
+                            {% if block.image is not empty %}
+                                {% set asset = block.image.one() %}
+                                {{ img.renderAsset(asset, {
+                                    transform: {
+                                        'height': '477',
+                                        'width': '636',
+                                    },
+                                    class: "img-fluid",
+                                }) }}
+                            {% else %}
+                                <img src="https://img.youtube.com/vi/{{ block.video }}/maxresdefault.jpg" width="636" height="477" alt="" class="img-fluid" />
+                            {% endif %}
+                            <a class="glightbox pulsating-play-btn" data-id="{{ block.video }}"></a>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
+                    <h3>{{ block.title }}</h3>
+                    {% if block.subline is not empty %}
+                        <p>
+                            {{ block.subline }}
+                        </p>
+                    {% endif %}
+                    {% if block.textTable is not empty %}
+                        {% set tableData = block.textTable %}
+                        <ul>
+                            {% for data in tableData %}
+                                <li>
+                                    <i class="bi bi-arrow-right-short"></i>
+                                    <div>
+                                        <h5>{{ data.headline }}</h5>
+                                        <p>{{ data.text }}</p>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}

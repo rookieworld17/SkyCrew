@@ -1,0 +1,127 @@
+color: null
+description: null
+fieldLayouts:
+  05b6edae-74cd-4733-92c2-7a62af0fc08c:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-07T11:06:39+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 925715c8-d512-40ea-a170-bacb389108f2 # Nicht im Hauptmenu anzeigen
+            handle: largeFormat
+            includeInCards: false
+            instructions: null
+            label: Großformat
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 18c6f063-35cd-4ddc-934c-61d6f49a24d3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-07T11:14:37+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 859882b8-2505-4bf4-8c52-f102b99bf9d7
+            userCondition: null
+          -
+            dateAdded: '2026-01-06T14:37:08+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 925715c8-d512-40ea-a170-bacb389108f2 # Nicht im Hauptmenu anzeigen
+                  layoutElementUid: 18c6f063-35cd-4ddc-934c-61d6f49a24d3
+                  uid: 27d1efba-c57f-44fd-bb0b-60c29c1ae086
+                  value: false
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: b169acdd-3b36-4e75-986a-73938f03732d # Bild
+            handle: bgImg
+            includeInCards: false
+            instructions: null
+            label: 'Hintergrund Bild'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 18da8e91-e4b0-4879-b1e8-76a7f3528a16
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-07T11:14:37+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 925715c8-d512-40ea-a170-bacb389108f2 # Nicht im Hauptmenu anzeigen
+                  layoutElementUid: 18c6f063-35cd-4ddc-934c-61d6f49a24d3
+                  uid: 5631eb57-ab94-4a4e-851c-26a49949f763
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Überschrift
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ee23ea2a-5fd0-4e19-b271-4d806c928baf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-07T11:14:37+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\LightswitchFieldConditionRule
+                  fieldUid: 925715c8-d512-40ea-a170-bacb389108f2 # Nicht im Hauptmenu anzeigen
+                  layoutElementUid: 18c6f063-35cd-4ddc-934c-61d6f49a24d3
+                  uid: 93a2fbad-4010-418c-8fec-e35cff507c60
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 7cff06a0-49d2-439f-8751-325a9a315ad4 # Subline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Beschreibung
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4765ccdc-c1b2-46cf-abf6-903d638b54f9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 48d8af85-a413-4596-b4eb-cf7557f3039d
+        userCondition: null
+handle: personalModule
+hasTitleField: false
+icon: users
+name: 'Mitarbeiter Module'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

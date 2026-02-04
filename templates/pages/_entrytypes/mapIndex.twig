@@ -1,0 +1,24 @@
+{% extends 'pages/_entrytypes/page.twig' %}
+
+{% block content %}
+    {% set asset = entry.bgImg.one() ?? global.bgImg.one() %}
+
+    {% set droneId = craft.app.request.getQueryParam('drone') %}
+    {% set datetime = craft.app.request.getQueryParam('datetime') %}
+
+    {% include 'pages/partials/pageContent.twig' with {
+        asset: asset
+    } %}
+
+    <div id="map"
+         data-drone="{{ droneId ?? '' }}"
+         data-datetime="{{ datetime ?? '' }}"
+         style="height: 600px;"
+    ></div>
+
+    <section id="map-info" class="py-4">
+    </section>
+
+
+    {% include 'contentmatrix/_index.twig' %}
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'layout/site' %}
+
+{% block content %}
+    {% set asset = entry.bgImg.one() ?? global.bgImg.one() %}
+
+    {% include 'pages/partials/pageContent.twig' with {
+        asset: asset
+    } %}
+
+    {% include 'contentmatrix/_index.twig' %}
+{% endblock %}

@@ -1,0 +1,14 @@
+<div class="page-title dark-background" data-aos="fade" style="background-image: url({{ asset.url }});">
+    <div class="container position-relative">
+        <h1>{{ entry.title }}</h1>
+        {% if entry.subline is not empty %}
+            <p>{{ entry.subline }}</p>
+        {% endif %}
+        <nav class="breadcrumbs">
+            <ol>
+                <li><a href="{{ homepage.url }}">{{ homepage.title }}</a></li>
+                <li class="current">{{ entry.title }}</li>
+            </ol>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+{% if block is defined and block is not empty %}
+    {% import "_macros/image.twig" as img %}
+
+    {%set services = craft.entries()
+        .section('services')
+        .all() %}
+
+    {% if services is not empty %}
+        <section id="services" class="services section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <span>{{ block.title }}<br></span>
+                <h2>{{ block.title }}</h2>
+                {% if block.subline is not empty %}
+                    <p>{{ block.subline }}</p>
+                {% endif%}
+            </div>
+
+            <div class="container">
+                <div class="row gy-4">
+                    {% for service in services %}
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 100 }}">
+                            <div class="card">
+                                <div class="card-img">
+                                    {% set asset = service.image.one() %}
+                                    {{ img.renderAsset(asset, {
+                                        transform: {
+                                            'width': '414',
+                                            'height': '311',
+                                        },
+                                        class: 'img-fluid crop',
+                                    }) }}
+                                </div>
+                                <h3><a href="{{ service.url }}" class="stretched-link">{{ service.title }}</a></h3>
+                                {% if service.subline is not empty %}
+                                    <p>{{ service.subline }}</p>
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    {% endif %}
+{% endif %}

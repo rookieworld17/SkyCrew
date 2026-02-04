@@ -1,0 +1,62 @@
+columnSuffix: null
+handle: license
+instructions: "Erforderliche Lizenz für Drohnen mit einem Gewicht von 249g: A1/A3 oder A2\r\nAlles, was wenig 249g. - ohne Lizenz"
+name: Lizenz
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Ohne Lizenz'
+        -
+          - value
+          - notLicense
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - A1/A3
+        -
+          - value
+          - a1A3
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - A2
+        -
+          - value
+          - a2
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

@@ -1,0 +1,23 @@
+{% if block is defined and block is not empty %}
+    {% import "_macros/image.twig" as img %}
+    <section id="call-to-action" class="call-to-action section dark-background">
+        {% set asset = block.bgImg.one() %}
+        {{ img.renderAsset(asset, {}) }}
+
+        <div class="container">
+            <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-xl-10">
+                    <div class="text-center">
+                        <h3>{{ block.title }}</h3>
+                        {% if block.subline is not empty %}
+                            <p>{{ block.subline }}</p>
+                        {% endif %}
+                        <a class="cta-btn" href="{{ block.linkField.value }}" target="{{ block.linkField.target }}">
+                            {{ block.linkField.label ?? block.linkField.value }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}

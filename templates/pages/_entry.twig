@@ -1,0 +1,10 @@
+{% if page is not defined %}
+    {% set page = entry %}
+{% endif %}
+
+{% do eagerLoadPage(entry) %}
+
+{% extends [
+    'pages/_entrytypes/' ~ page.type ~ '.twig',
+    'pages/_entrytypes/page.twig'
+] %}

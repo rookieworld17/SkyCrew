@@ -1,0 +1,87 @@
+color: null
+description: null
+fieldLayouts:
+  8cf4331b-8f5c-4988-9690-e1211f73da10:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-01-06T09:58:19+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 79068110-1817-4fbf-a8c8-6405ded1636d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-06T09:59:47+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7cff06a0-49d2-439f-8751-325a9a315ad4 # Subline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cda02531-8d79-417c-95be-eb8de7b0ffb3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-06T10:46:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f00b3f30-e748-45a8-8ddd-fa906a6a792b # Text/Image Box
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: df4a60be-c5f4-4d98-961a-ee97ec2793d0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: e38cc20d-fd01-4083-b5fb-086f39170866
+        userCondition: null
+handle: textImageModule
+hasTitleField: true
+icon: indent
+name: 'Text/Image Module'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

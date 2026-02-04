@@ -1,0 +1,23 @@
+{% macro navItems(entries) %}
+    {% for entry in entries %}
+        {% if entry.dontShowInMenu is defined and entry.dontShowInMenu is empty %}
+            {% set children = entry.getChildren().all() %}
+            {% set hasChildren = children|length %}
+            
+            <li class="{{ hasChildren ? 'dropdown' : '' }}">
+                <a href="{{ entry.url }}" class="text-decoration-none">
+                    {{ entry.title }}
+                    {% if hasChildren %}
+                        <i class="bi bi-chevron-down toggle-dropdown"></i>
+                    {% endif %}
+                </a>
+
+                {% if hasChildren %}
+                    <ul>
+                        {{ _self.navItems(children) }}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}

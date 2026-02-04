@@ -1,0 +1,136 @@
+{% import "_macros/image.twig" as img %}
+
+<div class="container">
+    <div class="row gy-4">
+        <div class="col-lg-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+
+                    <h3 class="mb-3">{{ drone.title }}</h3>
+
+                    {% set image = drone.image.one() ?? null %}
+                    {% if image %}
+                        {{ img.renderAsset(image, {
+                            transform: {
+                                'width': 420,
+                                'height': 260
+                            },
+                            class: 'img-fluid rounded mb-3'
+                        }) }}
+                    {% endif %}
+
+                    <ul class="list-group list-group-flush small">
+                        {% if drone.weight is not empty %}
+                            <li class="list-group-item px-0">
+                                <strong>{{ 'Gewicht: '|t('site') }}</strong>{{ drone.weight }} {{ 'g'|t('site') }}
+                            </li>
+                        {% endif %}
+                        {% if drone.license.value is not empty %}
+                            <li class="list-group-item px-0">
+                                <strong>{{ 'Lizenz erforderlich: '|t('site') }}</strong>{{ drone.license.value == 'notLicense' ? 'Nein'|t('site') : drone.license.label }}
+                            </li>
+                        {% endif %}
+                        {% if drone.maxFlightTime is not empty %}
+                            <li class="list-group-item px-0">
+                                <strong>{{ 'Maximale Flugzeit: '|t('site') }}</strong>{{ drone.maxFlightTime }} {{ 'm'|t('site') }}
+                            </li>
+                        {% endif %}
+                        {% if drone.maxSpeed is not empty %}
+                            <li class="list-group-item px-0">
+                                <strong>{{ 'Höchstgeschwindigkeit: '|t('site') }}</strong>{{ drone.maxSpeed }} {{ 'm/s'|t('site') }}
+                            </li>
+                        {% endif %}
+                        {% if maxWindResistance is not empty %}
+                            <li class="list-group-item px-0">
+                                <strong>{{ 'Maximale Windbeständigkeit: '|t('site') }}</strong>{{ maxWindResistance }} {{ 'm/s'|t('site') }}
+                            </li>
+                        {% endif %}
+                        {% if windLimit is not empty %}
+                            <li class="list-group-item px-0">
+                                <strong>{{ 'Empfohlene Windgrenze: '|t('site') }}</strong>{{ windLimit }} {{ 'm/s'|t('site') }}
+                            </li>
+                        {% endif %}
+                        {% if drone.ipRating is not empty %}
+                            <li class="list-group-item px-0">
+                                <strong>{{ 'Schutzklasse gegen Wasser: '|t('site') }}</strong>{{ drone.ipRating }}
+                            </li>
+                        {% endif %}
+                        {% if drone.battery is not empty %}
+                            <li class="list-group-item px-0">
+                                <strong>{{ 'Batterietyp: '|t('site') }}</strong>{{ drone.battery }}
+                            </li>
+                        {% endif %}
+                        {% if drone.batteryCapacity is not empty %}
+                            <li class="list-group-item px-0">
+                                <strong>{{ 'Batteriekapazität: '|t('site') }}</strong>{{ drone.batteryCapacity }}
+                            </li>
+                        {% endif %}
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <h3>{{ 'Flugbedingungen'|t('site') }}</h3>
+
+                    {% if temperature is empty and windSpeedKmh is empty and windSpeedMs is empty %}
+                        <div class="alert alert-warning">
+                            {{ 'Wetterdaten sind nur für einen Zeitraum von 16 Tagen verfügbar!'|t('site') }}
+                        </div>
+                    {% else %}
+                        {% if temperature is not null %}
+                            <h6>
+                                {% if temperature < 0 %}
+                                    <i class="bi bi-thermometer-snow"></i>
+                                {% else %}
+                                    <i class="bi bi-thermometer-sun"></i>
+                                {% endif %}
+                                {{ temperature ~ ' °C'|t('site') }}
+                            </h6>
+                        {% else %}
+                            <i class="bi bi-thermometer"></i>{{ ' –'|t('site') }}
+                        {% endif %}
+                        <h6>
+                            <i class="bi bi-wind"></i>
+                            {{ windSpeedKmh ~ ' km/h | '|t('site') ~ windSpeedMs ~ ' m/s'|t('site') }}<br>
+                        </h6>
+                    {% endif %}
+
+                    {% if canFly == 'success' %}
+                        <div class="alert alert-{{ difficultyLevel }} mt-3">
+                            {{ 'Flugschwierigkeiten bei den aktuellen Wetterbedingungen: '|t('site') ~ difficulty }}
+                        </div>
+                    {% endif %}
+
+                    <div class="alert alert-{{ canFly ? 'success' : 'danger mt-3' }}">
+                        {{ canFly ? 'Flug erlaubt'|t('site') : 'Flug NICHT erlaubt'|t('site') }}
+                    </div>
+
+                    {% if not canFly %}
+                        {% if noFlyZone and zoneText %}
+                            <div class="alert alert-danger">
+                                <strong>{{ 'Sperrgebiet:'|t('site') }}</strong>
+                                {{ zoneText }}
+                            </div>
+                        {% endif %}
+                        {% if noFlyWind %}
+                            <div class="alert alert-danger">
+                                <strong>{{ 'Wind zu stark'|t('site') }}</strong>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+
+                    {% if drone.license.value is not empty and drone.license.value is not same as 'notLicense' %}
+                        <div class="alert alert-warning">
+                            {{ 'Für diese Drohne wird eine Lizenz benötigt: '|t('site') ~ drone.license.label }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

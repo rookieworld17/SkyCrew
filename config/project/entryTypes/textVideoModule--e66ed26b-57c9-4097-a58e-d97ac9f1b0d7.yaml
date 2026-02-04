@@ -1,0 +1,132 @@
+color: null
+description: null
+fieldLayouts:
+  505fe9c3-32b5-462e-8ce7-4adfdb090ae4:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-11-28T09:32:45+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Headline
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1ccc7d6a-2597-4dda-99d4-703a9703d4b7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T22:56:28+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5ba99515-4f13-4bcb-af24-9cb0e1f15924 # Text
+            handle: subline
+            includeInCards: false
+            instructions: null
+            label: Subline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f8970ea4-a60b-4ce4-bcf9-e39507cf2af1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T15:11:26+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: cc58131f-8836-4846-9894-8e50dcc014ef # Inhalt Tabelle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Inhalt
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5ff5f772-32c3-41ef-aad8-288f14d745dd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T15:11:26+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: video
+            includeInCards: false
+            instructions: null
+            label: 'Video ID (YouTube)'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4fce216e-715b-4d38-9297-528ab6996af1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-05T16:26:29+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\TextFieldConditionRule
+                  fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+                  layoutElementUid: 4fce216e-715b-4d38-9297-528ab6996af1
+                  operator: notempty
+                  uid: 257683d8-b51c-4381-8906-e53406ad0d77
+                  value: ''
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: b169acdd-3b36-4e75-986a-73938f03732d # Bild
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Prev Video IMG'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 40782d4d-d570-43be-b995-cfd72ae1dfcf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 6d3f010b-e863-48c9-995e-685cce938310
+        userCondition: null
+handle: textVideoModule
+hasTitleField: true
+icon: chart-tree-map
+name: 'Text Video'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

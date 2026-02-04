@@ -1,0 +1,99 @@
+fieldLayouts:
+  8fc0f46a-1e50-4a9d-bad3-14ecd1b4b73d:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-02T16:18:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c28cfb53-589c-4ae1-854d-c791f99d84f7 # Link
+            handle: lnkTwitter
+            includeInCards: false
+            instructions: null
+            label: X
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5b620a4f-d659-4862-a79a-133429fd0ffd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T16:18:45+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 9a33f3f0-d365-4a0e-8881-4a3fe937f713
+            userCondition: null
+          -
+            dateAdded: '2026-01-02T16:18:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c28cfb53-589c-4ae1-854d-c791f99d84f7 # Link
+            handle: lnkFacebook
+            includeInCards: false
+            instructions: null
+            label: Facebook
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20cd9bc1-30f1-4252-bfc7-123bacb102fd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T16:18:45+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: e49fe081-767f-4f9b-b6c5-18e6df7106ce
+            userCondition: null
+          -
+            dateAdded: '2026-01-02T16:18:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c28cfb53-589c-4ae1-854d-c791f99d84f7 # Link
+            handle: lnkInstagram
+            includeInCards: false
+            instructions: null
+            label: Instagram
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27b7f80d-0ee0-4bad-9f56-2f682788f2d1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-02T16:18:45+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: bd749709-9f6c-4e9f-94db-b843f8b8ab4f
+            userCondition: null
+          -
+            dateAdded: '2026-01-02T16:18:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c28cfb53-589c-4ae1-854d-c791f99d84f7 # Link
+            handle: lnkLinkedIn
+            includeInCards: false
+            instructions: null
+            label: LinkedIn
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2ba5f29c-e048-47da-9483-b91cb30eb318
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 7c3d6998-8f4f-45a5-8075-f504170509c8
+        userCondition: null
+handle: globalSocial
+name: 'Social Media'
+sortOrder: 3

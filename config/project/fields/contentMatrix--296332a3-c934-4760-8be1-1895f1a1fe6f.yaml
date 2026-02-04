@@ -1,0 +1,85 @@
+columnSuffix: null
+handle: contentMatrix
+instructions: null
+name: 'Content Matrix'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - d0515493-2b77-4f0c-b9cf-8365c327a4d7 # Text/Image Module
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - e66ed26b-57c9-4097-a58e-d97ac9f1b0d7 # Text Video
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - 14ddc3b2-3146-4181-882c-927baa81f6f5 # Call Action
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - 58a68cfc-70c6-4978-a5ef-3c6bb013a7d1 # Mitarbeiter Module
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - 5866044c-8720-4c74-af09-397d7e9f33dc # FAQ Module
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - 6bd0a8b5-3259-4f6b-9ea6-95b5dc301abf # Dienstleistungen Module
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - 332ac3dd-683f-4613-8aee-7190ac7ac3ff # Test Map Module
+        -
+          - group
+          - Allgemein
+    -
+      __assoc__:
+        -
+          - uid
+          - 711646af-4a16-413d-9eb9-04f0654454aa # Anker Module
+        -
+          - group
+          - Dienstleistung
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,26 @@
+{% extends 'layout/_layout.twig' %}
+
+{% set homepage = craft.entries()
+    .section('homepage')
+    .one() %}
+
+{% set sites = craft.entries()
+    .section('pages')
+    .level(1)
+    .all() %}
+
+{% block body %}
+    {% block header %}
+        {% include 'layout/partials/header.twig' %}
+    {% endblock %}
+
+    <main class="main">
+        {% block content %}
+            {% include 'contentmatrix/_index.twig' %}
+        {% endblock %}
+    </main>
+
+    {% block footer %}
+        {% include 'layout/partials/footer.twig' %}
+    {% endblock %}
+{% endblock %}

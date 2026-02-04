@@ -1,0 +1,116 @@
+{% if block is defined and block is not empty %}
+    {% import "_macros/image.twig" as img %}
+
+    {% set personals = craft.entries()
+        .section('personal')
+        .all() %}
+
+    {% if personals is not empty %}
+        {% if block.largeFormat is empty %}
+            <section id="testimonials" class="testimonials section dark-background">
+                {% set asset = block.bgImg.one() %}
+                {{ img.renderAsset(asset, {
+                    class: 'testimonials-bg'
+                }) }}
+    
+                <div class="container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper init-swiper">
+                        <script type="application/json" class="swiper-config">
+                            {
+                                "loop": true,
+                                "speed": 600,
+                                "autoplay": {
+                                    "delay": 5000
+                                },
+                                "slidesPerView": "auto",
+                                "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "type": "bullets",
+                                    "clickable": true
+                                }
+                            }
+                        </script>
+                        <div class="swiper-wrapper">
+                            {% for person in personals %}
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        {% set personImg = person.image.one() %}
+                                        {{ img.renderAsset(personImg, {
+                                            class: 'testimonial-img'
+                                        }) }}
+    
+                                        <h3>{{ person.staffName }}</h3>
+                                        <h4>{{ person.job }}</h4>
+    
+                                        {% if person.subline is not empty %}
+                                            <p>
+                                                <i class="bi bi-quote quote-icon-left"></i>
+                                                <span>{{ person.subline }}</span>
+                                                <i class="bi bi-quote quote-icon-right"></i>
+                                            </p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        {% else %}
+            <section id="team" class="team section">
+
+                <div class="container section-title" data-aos="fade-up">
+                    <span>{{ block.headline }}<br></span>
+                    <h2>{{ block.headline }}</h2>
+                    {% if block.subline is not empty %}
+                        <p>{{ block.subline }}</p>
+                    {% endif %}
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        {% for person in personals %}
+                            <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 100 }}">
+                                <div class="member">
+                                    {% set personImg = person.image.one() %}
+                                    {{ img.renderAsset(personImg, {
+                                        class: 'img-fluid'
+                                    }) }}
+
+                                    <div class="member-content">
+                                        <h4>{{ person.staffName }}</h4>
+                                        <span>{{ person.job }}</span>
+
+                                        {% if person.subline is not empty %}
+                                            <p>{{ block.subline }}</p>
+                                        {% endif %}
+
+                                        <div class="social">
+                                            {% if person.x is not empty %}
+                                                <a href="{{ person.x.value }}" target="{{ person.x.target }}"><i class="bi bi-twitter-x"></i></a>
+                                            {% endif %}
+
+                                            {% if person.facebook is not empty %}
+                                                <a href="{{ person.facebook.value }}" target="{{ person.facebook.target }}"><i class="bi bi-facebook"></i></a>
+                                            {% endif %}
+
+                                            {% if person.insta is not empty %}
+                                                <a href="{{ person.insta.value }}" target="{{ person.insta.target }}"><i class="bi bi-instagram"></i></a>
+                                            {% endif %}
+
+                                            {% if person.linkedIn is not empty %}
+                                                <a href="{{ person.linkedIn.value }}" target="{{ person.linkedIn.target }}"><i class="bi bi-linkedin"></i></a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+    {% endif %}
+{% endif %}
+

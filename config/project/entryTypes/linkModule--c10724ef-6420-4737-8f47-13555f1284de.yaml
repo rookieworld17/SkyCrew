@@ -1,0 +1,40 @@
+color: null
+description: null
+fieldLayouts:
+  7594b32c-d57b-458a-9fd6-c04ea4917af0:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-02T15:24:37+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c28cfb53-589c-4ae1-854d-c791f99d84f7 # Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea8e0f84-9f07-46de-a003-e1cea4cf17b3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 5196ecaa-1739-4e71-ad4e-ed959eeeed51
+        userCondition: null
+handle: linkModule
+hasTitleField: false
+icon: link
+name: Link
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

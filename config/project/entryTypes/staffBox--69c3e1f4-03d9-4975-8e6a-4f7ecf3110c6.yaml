@@ -1,0 +1,167 @@
+color: null
+description: null
+fieldLayouts:
+  592e83b4-a27d-43d0-a929-617b5149330c:
+    cardThumbAlignment: start
+    cardView:
+      - 'layoutElement:4838c897-ea62-4fc8-bf4d-d82031dca34e'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-06T11:59:11+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b169acdd-3b36-4e75-986a-73938f03732d # Bild
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: true
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3cf5f5bc-ead2-4e3a-9adc-dea0359f5e15
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-06T11:59:11+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: staffName
+            includeInCards: false
+            instructions: null
+            label: 'Name Nachname'
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cbef6e76-4ace-42d0-9634-414b17e28714
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-06T11:59:11+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: job
+            includeInCards: true
+            instructions: null
+            label: Stelle
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4838c897-ea62-4fc8-bf4d-d82031dca34e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-06T11:59:11+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7cff06a0-49d2-439f-8751-325a9a315ad4 # Subline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Beschreibung
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3f4016bd-6e60-4d6e-b36a-c3d2f51e9bbe
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 4624fb4a-cd07-45cb-880e-dcc471fcb2e7
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-07T11:03:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7ea67464-882b-442b-98a9-f88071b8314c # Social Media Link
+            handle: x
+            includeInCards: false
+            instructions: null
+            label: X
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e003d3ad-56cc-433e-b74d-0e7d99590b5d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-07T11:03:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7ea67464-882b-442b-98a9-f88071b8314c # Social Media Link
+            handle: facebook
+            includeInCards: false
+            instructions: null
+            label: Facebook
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 12b407f1-2e10-456c-b5c2-ce77facd0b1c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-07T11:03:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7ea67464-882b-442b-98a9-f88071b8314c # Social Media Link
+            handle: insta
+            includeInCards: false
+            instructions: null
+            label: Instagram
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 751649b2-b677-40a4-bf2f-044974223f7c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-07T11:03:49+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 7ea67464-882b-442b-98a9-f88071b8314c # Social Media Link
+            handle: linkedIn
+            includeInCards: false
+            instructions: null
+            label: LinkedIn
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b5663a35-8542-482b-950e-b01915453130
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Social Media'
+        uid: 56e730e7-4348-4c24-9f08-8cc7113f38ed
+        userCondition: null
+handle: staffBox
+hasTitleField: false
+icon: address-book
+name: 'Staff Box'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{staffName}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

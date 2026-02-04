@@ -1,0 +1,56 @@
+columnSuffix: null
+handle: test
+instructions: null
+name: test
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - 43252258-91f9-4c8f-85b2-8c5f1cd05072
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    1:
+                      - uid
+                      - c60ff3c8-70fd-4014-963f-c5bcb375ca2e
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2026-01-02T15:30:48+00:00'
+                            11:
+                              - uid
+                              - 1f91e370-f7f1-448b-bc3c-ecb50993587d
+                            14:
+                              - fieldUid
+                              - b169acdd-3b36-4e75-986a-73938f03732d # Bild
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

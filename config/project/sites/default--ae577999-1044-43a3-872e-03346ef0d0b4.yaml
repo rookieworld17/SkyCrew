@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: default
+hasUrls: true
+language: de
+name: SkyCrew
+primary: true
+siteGroup: b20d551b-b50a-485e-a8ed-35627ae4aa5d # skycrew
+sortOrder: 1

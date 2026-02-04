@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    {% hook "seo" %}
+
+    <link rel="stylesheet"
+          href="{{ alias('@assetUrl') }}/vendor/bootstrap/css/bootstrap.min.css"
+    >
+    <link rel="stylesheet"
+          href="{{ alias('@assetUrl') }}/vendor/bootstrap-icons/bootstrap-icons.css"
+    >
+    <link rel="stylesheet"
+          href="{{ alias('@assetUrl') }}/vendor/aos/aos.css"
+    >
+    <link rel="stylesheet"
+          href="{{ alias('@assetUrl') }}/vendor/fontawesome-free/css/all.min.css"
+    >
+    <link rel="stylesheet"
+          href="{{ alias('@assetUrl') }}/vendor/glightbox/css/glightbox.min.css"
+    >
+    <link rel="stylesheet"
+          href="{{ alias('@assetUrl') }}/vendor/swiper/swiper-bundle.min.css"
+    >
+
+    <link rel="stylesheet"
+          href="{{ alias('@assetUrl') }}/css/main.css"
+    >
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <style>
+        #map { height: 500px; width: 100%; }
+    </style>
+</head>
+
+<body class="index-page">
+    {% block body %}{% endblock %}
+
+    {% do craft.site.includeAssetBundle() %}
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    {% block scripts %}
+        <!-- Vendor JS Files -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="{{ alias('@assetUrl') }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ alias('@assetUrl') }}/vendor/php-email-form/validate.js"></script>
+        <script src="{{ alias('@assetUrl') }}/vendor/aos/aos.js"></script>
+        <script src="{{ alias('@assetUrl') }}/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="{{ alias('@assetUrl') }}/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="{{ alias('@assetUrl') }}/vendor/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Main JS File -->
+        <script src="{{ alias('@assetUrl') }}/js/main.js"></script>
+    {% endblock %}
+</body>
+</html>

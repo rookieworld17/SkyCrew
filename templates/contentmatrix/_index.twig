@@ -1,0 +1,9 @@
+{% if contentMatrix is not defined and page.contentMatrix is defined and page.contentMatrix %}
+    {% set contentMatrix = page.contentMatrix %}
+{% endif %}
+
+{% if contentMatrix is defined %}
+    {% for block in contentMatrix.all() %}
+        {% include 'contentmatrix/_blocktypes/' ~ block.getType().handle ~  '.twig' %}
+    {% endfor %}
+{% endif %}

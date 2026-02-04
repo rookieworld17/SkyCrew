@@ -1,0 +1,138 @@
+<footer id="footer" class="footer dark-background">
+
+    {% set homepage = craft.entries()
+        .type('homepage')
+        .one() %}
+
+    <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-about">
+                <a href="{{ homepage.getUrl() }}" class="logo d-flex align-items-center text-decoration-none">
+                    <span class="sitename">{{ currentSite.name }}</span>
+                </a>
+                <p>{{ footer.subline }}</p>
+                <div class="social-links d-flex mt-4">
+                    {% if globalSocial.lnkTwitter is not empty %}
+                        {% set x = globalSocial.lnkTwitter %}
+                        <a class="text-decoration-none"
+                           href="{{ x.value }}"
+                           target="{{ x.target }}"
+                        >
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                    {% endif %}
+
+                    {% if globalSocial.lnkFacebook is not empty %}
+                        {% set facebook = globalSocial.lnkFacebook %}
+                        <a class="text-decoration-none"
+                           href="{{ facebook.value }}"
+                           target="{{ facebook.target }}"
+                        >
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    {% endif %}
+
+                    {% if globalSocial.lnkInstagram is not empty %}
+                        {% set insta = globalSocial.lnkInstagram %}
+                        <a class="text-decoration-none"
+                           href="{{ insta.value }}"
+                           target="{{ insta.target }}"
+                        >
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    {% endif %}
+
+                    {% if globalSocial.lnkLinkedIn is not empty %}
+                        {% set linkedIn = globalSocial.lnkLinkedIn %}
+                        <a class="text-decoration-none"
+                           href="{{ linkedIn.value }}"
+                           target="{{ linkedIn.target }}"
+                        >
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+
+            {% if footer.usefulLinks is not empty %}
+                {% set links = footer.usefulLinks.all() %}
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>{{ 'Useful Links'|t('site') }}</h4>
+                    <ul>
+                        {% for link in links %}
+                            {% set linkData = link.linkField %}
+                            <li>
+                                <a class="text-decoration-none"
+                                   href="{{ linkData.value }}"
+                                   target="{{ linkData.target }}"
+                                >
+                                    {{ linkData.label }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+
+            {% if footer.ourServicesLinkMatrix is not empty %}
+                {% set links = footer.ourServicesLinkMatrix.all() %}
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>{{ 'Our Services'|t('site') }}</h4>
+                    <ul>
+                        {% for link in links %}
+                            {% set linkData = link.linkField %}
+                            <li>
+                                <a class="text-decoration-none"
+                                   href="{{ linkData.value }}"
+                                   target="{{ linkData.target }}"
+                                >
+                                    {{ linkData.label }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+
+            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                {% if footer.phone is not empty and footer.mail is not empty %}
+                    <h4>{{ 'Contact Us'|t('site') }}</h4>
+                {% endif %}
+                {% if footer.street is not empty %}
+                    <p>{{ footer.street }}</p>
+                {% endif %}
+                {% if footer.cityZip is not empty %}
+                    <p>{{ footer.cityZip }}</p>
+                {% endif %}
+                {% if footer.state is not empty %}
+                    <p>{{ footer.state }}</p>
+                {% endif %}
+                {% if footer.phone is not empty %}
+                    <p class="mt-4">
+                        <strong>{{ 'Phone:'|t('site') }}</strong>
+                        <a class="text-decoration-none"
+                           href="tel:{{ footer.phone }}"
+                        >
+                            {{ footer.phone }}
+                        </a>
+                    </p>
+                {% endif %}
+                {% if footer.mail is not empty %}
+                    <p>
+                        <strong>{{ 'Email:'|t('site') }}</strong>
+                        <a class="text-decoration-none"
+                           href="mailto:{{ footer.mail }}"
+                        >
+                            {{ footer.mail }}
+                        </a>
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+        <p>© <span>{{ 'Copyright'|t('site') }}</span> <strong class="px-1 sitename">{{ 'SkyCrew'|t('site') }}</strong> <span>{{ 'All Rights Reserved'|t('site') }}</span></p>
+    </div>
+
+</footer>

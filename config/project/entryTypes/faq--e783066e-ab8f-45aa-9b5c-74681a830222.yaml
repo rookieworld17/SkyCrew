@@ -1,0 +1,57 @@
+color: null
+description: null
+fieldLayouts:
+  8ea852fc-ef3a-40c1-986f-10b3b176f9f0:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-06T15:07:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: question
+            includeInCards: false
+            instructions: null
+            label: Frage
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42e23d54-aed4-4fb8-8dcc-749fd144a121
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-02-04T09:55:48+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5ba99515-4f13-4bcb-af24-9cb0e1f15924 # Text
+            handle: answer
+            includeInCards: false
+            instructions: null
+            label: Answer
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6c6228da-a769-4801-8230-7a4162a08707
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: 9a2fd16f-b5ae-4d43-97ba-76a20c10043d
+        userCondition: null
+handle: faq
+hasTitleField: false
+icon: question
+name: FAQ
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{question}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

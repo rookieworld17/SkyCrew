@@ -1,0 +1,71 @@
+{#
+image macro, for all available options see modules\site\models\ImageOptions
+
+most important one are
+{
+    // add an additional webP source <source type="image/webp">
+    useWebP: true,
+
+    // the craft transform
+    transform: null,
+    // placeholder url in case lazyloading is active
+    placeholderUrl: 'https://imagetest.2ndlab.dev/assets/uploads/general/SECONDRED_BuddyIcon_512.png',
+    // sizes attribute -> string
+    sizes: '(max-width: 480px) 100vw, (max-width: 1200px) 50vw, 33vw',
+    // the srcset for $asset->getSrcset()
+    srcset: [],
+    disableLazyLoadIfFirst: false,
+    lazyloading: true,
+
+    // special extra attributes for each tag
+    pictureAttributes: {},
+    sourceAttributes: {},
+    imageAttributes: {},
+}
+
+#}
+{% macro renderAsset(assetQuery, options) %}
+    {% set defaults = {
+        useWebP: true,
+        transform: null,
+        placeholderUrl: null,
+        sizes: '(max-width: 480px) 100vw, (max-width: 1200px) 50vw, 33vw',
+        srcset: [],
+        disableLazyLoadIfFirst: false,
+        lazyloading: false,
+        dataAttributes: {}
+    } %}
+
+    {# twig function in default module #}
+    {% set options = getImageOptions(options, defaults) %}
+    {% if assetQuery is instance of ('craft\\elements\\db\\AssetQuery') %}
+        {% set asset = assetQuery.one() %}
+    {% else %}
+        {% set asset = assetQuery %}
+    {% endif %}
+
+    {# maybe load a default img? can be included in this function #}
+
+    {% if asset %}
+
+        {% set dataAttrs = {} %}
+        {% for key, val in options.dataAttributes %}
+            {% set dataAttrs = dataAttrs|merge({('data-' ~ key): val}) %}
+        {% endfor %}
+
+        {% if asset is instance of ('craft\\elements\\Asset') %}
+            {% set imageAttributes = craft.site.getImageAttributes(asset, options)|merge(dataAttrs) %}
+            {% set sources = craft.site.getImageSources(asset, options) %}
+
+            {% for source in sources %}
+                {{ tag('source', source) }}
+            {% endfor %}
+
+            {{ tag('img', imageAttributes) }}
+        {% else %}
+            {% set imageAttributes = {src: asset.url}|merge(options.getImageAttributes())|merge(dataAttrs) %}
+
+            {{ tag('img', imageAttributes) }}
+        {% endif %}
+    {% endif %}
+{% endmacro %}

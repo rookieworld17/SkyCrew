@@ -1,0 +1,56 @@
+{% extends 'pages/_entrytypes/page.twig' %}
+{% set page = entry %}
+
+{% block content %}
+    {% import "_macros/image.twig" as img %}
+
+    {% set asset = entry.image.one() %}
+    {% set pageImg = entry.pageImg.one() %}
+
+    {% include 'pages/partials/pageContent.twig' with {
+        asset: asset
+    } %}
+
+    <section id="service-details" class="service-details section">
+        <div class="container">
+            <div class="row gy-4">
+                {% set anchorBlocks = entry.contentMatrix.type('ankerModule').all() %}
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    {% if anchorBlocks is not empty %}
+                        <div class="services-list">
+                            {% for anchor in anchorBlocks %}
+                                <a href="#{{ anchor.title }}">{{ anchor.title }}</a>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+
+                    {% if entry.indexHeadline is not empty %}
+                        <h4>{{ entry.indexHeadline }}</h4>
+                    {% endif %}
+
+                    {% if entry.indexSubline is not empty %}
+                        <p>{{ entry.indexSubline }}</p>
+                    {% endif %}
+                </div>
+
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                    {% if pageImg is not empty %}
+                        {{ img.renderAsset(pageImg, {
+                            transform: {
+                                'width': '856',
+                                'height': '542',
+                            },
+                            class: 'img-fluid services-img'
+                        }) }}
+                    {% endif %}
+
+                    {{ entry.text }}
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    {% include 'contentmatrix/_index.twig' %}
+{% endblock %}

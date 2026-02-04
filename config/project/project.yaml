@@ -1,0 +1,175 @@
+dateModified: 1770209112
+elementSources:
+  craft\elements\Entry:
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: singles
+      tableAttributes:
+        - status
+        - link
+      type: native
+    -
+      heading: Inhalte
+      key: 'heading:76121826-7ee4-4cd3-98c9-58df6cc99762'
+      type: heading
+    -
+      key: 'section:4dbebbb8-74ea-4c22-89fa-a432ce3060a5' # Seiten
+      type: native
+    -
+      heading: Vorlage
+      key: 'heading:87b23cc5-1b2a-4f9e-bbb6-486f4e12f0f5'
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:3315ba3e-f7cc-4697-89d8-c37d5bb58996' # Text Image
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:d92784e8-77fd-4536-bdb4-a1b471309e35' # Mitarbeiter
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:95b67ee4-f169-4cea-8dd6-90d730534a01' # FAQ
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:ed78fbbd-82b1-46b5-8697-be9ff0d7f25a' # Dienstleistungen
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:4549c8ec-b1ff-4632-a4bb-719f6c01540c' # Drones
+      type: native
+email:
+  fromEmail: d.zakasovskiy1707@gmail.com
+  fromName: skycrew
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  general:
+    hasUrls: true
+    name: Allgemein
+    settings:
+      path: '@assetPath/uploads/general'
+    type: craft\fs\Local
+    url: '@assetUrl/uploads/general/'
+meta:
+  __names__:
+    2a3c9cd1-b7b4-4578-98e0-08d2e174c262: 'FAQ Auswahl' # FAQ Auswahl
+    3a0ddcd9-8e4c-4761-926b-d1b468ac0a52: 'About Übersicht' # About Übersicht
+    4dbebbb8-74ea-4c22-89fa-a432ce3060a5: Seiten # Seiten
+    5ba99515-4f13-4bcb-af24-9cb0e1f15924: Text # Text
+    6bd0a8b5-3259-4f6b-9ea6-95b5dc301abf: 'Dienstleistungen Module' # Dienstleistungen Module
+    7cff06a0-49d2-439f-8751-325a9a315ad4: Subline # Subline
+    7d438504-33c0-4bfc-ad84-44abfd64bb0a: Homepage # Homepage
+    7ea67464-882b-442b-98a9-f88071b8314c: 'Social Media Link' # Social Media Link
+    9de1bdc7-e7ff-48dc-b514-2f18c7fbdd93: 'Im Footermenü anzeigen' # Im Footermenü anzeigen
+    9eacf103-79c0-430b-b51b-272657cdb196: Allgemein # Allgemein
+    14ddc3b2-3146-4181-882c-927baa81f6f5: 'Call Action' # Call Action
+    58a68cfc-70c6-4978-a5ef-3c6bb013a7d1: 'Mitarbeiter Module' # Mitarbeiter Module
+    58d10903-0d11-46d3-9bd5-768c07a9be16: Lizenz # Lizenz
+    69c3e1f4-03d9-4975-8e6a-4f7ecf3110c6: 'Staff Box' # Staff Box
+    80d63eda-fd6d-4861-83e5-f9abbfd56c82: 'Social Media' # Social Media
+    95b67ee4-f169-4cea-8dd6-90d730534a01: FAQ # FAQ
+    286b1e74-9501-4ae3-a6cb-ec6d2337c0f9: 'Our Services Link Matrix' # Our Services Link Matrix
+    332ac3dd-683f-4613-8aee-7190ac7ac3ff: 'Test Map Module' # Test Map Module
+    887f31b8-2785-4659-9f4e-f71bbb8e1eaf: 'Footer Inhalt' # Footer Inhalt
+    3315ba3e-f7cc-4697-89d8-c37d5bb58996: 'Text Image' # Text Image
+    4549c8ec-b1ff-4632-a4bb-719f6c01540c: Drones # Drones
+    296332a3-c934-4760-8be1-1895f1a1fe6f: 'Content Matrix' # Content Matrix
+    711646af-4a16-413d-9eb9-04f0654454aa: 'Anker Module' # Anker Module
+    925715c8-d512-40ea-a170-bacb389108f2: 'Nicht im Hauptmenu anzeigen' # Nicht im Hauptmenu anzeigen
+    5866044c-8720-4c74-af09-397d7e9f33dc: 'FAQ Module' # FAQ Module
+    a3d47f12-bb58-46e2-8d17-7017dece69e8: Zahl # Zahl
+    ae577999-1044-43a3-872e-03346ef0d0b4: SkyCrew # SkyCrew
+    aff89e48-c9a5-43d9-8277-d099fa7f133f: Dienstleistungen # Dienstleistungen
+    b6ecff5b-bd88-4025-9590-9ec7edbe63a9: Headline # Headline
+    b20d551b-b50a-485e-a8ed-35627ae4aa5d: skycrew # skycrew
+    b40cb5cd-bd29-404f-88b7-47ca6d5716c6: 'Useful Links Matrix' # Useful Links Matrix
+    b169acdd-3b36-4e75-986a-73938f03732d: Bild # Bild
+    b455a4e7-544b-4cd3-810f-db4ab5a1e876: Homepage # Homepage
+    c28cfb53-589c-4ae1-854d-c791f99d84f7: Link # Link
+    c947ee1f-1a2b-430f-b94f-7ba51164ad18: SEO # SEO
+    c10724ef-6420-4737-8f47-13555f1284de: Link # Link
+    caf20086-7c79-4c23-b1da-55529195e0ca: Seite # Seite
+    cc0cdf27-7055-4073-a3b7-b6b74a880c14: 'Map Index' # Map Index
+    cc58131f-8836-4846-9894-8e50dcc014ef: 'Inhalt Tabelle' # Inhalt Tabelle
+    cd4c7ee7-c50f-4f66-80d0-1811555f50d0: 'Drone Index' # Drone Index
+    d0515493-2b77-4f0c-b9cf-8365c327a4d7: 'Text/Image Module' # Text/Image Module
+    d92784e8-77fd-4536-bdb4-a1b471309e35: Mitarbeiter # Mitarbeiter
+    e61acf06-6ee0-4985-b3c4-7080b0cc0bce: Simple # Simple
+    e66ed26b-57c9-4097-a58e-d97ac9f1b0d7: 'Text Video' # Text Video
+    e127daa5-093b-4928-a45e-74eaeda33c80: 'Text Image' # Text Image
+    e5369fc7-fc93-4510-97f9-43d154f197fc: test # test
+    e783066e-ab8f-45aa-9b5c-74681a830222: FAQ # FAQ
+    ed78fbbd-82b1-46b5-8697-be9ff0d7f25a: Dienstleistungen # Dienstleistungen
+    f00b3f30-e748-45a8-8ddd-fa906a6a792b: 'Text/Image Box' # Text/Image Box
+    fc477a21-6d36-48ce-9a01-b139bb6d83b9: Allgemein # Allgemein
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  element-seeder:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+system:
+  edition: solo
+  live: true
+  name: SkyCrew
+  retryDuration: null
+  schemaVersion: 5.8.0.3
+  timeZone: Europe/Berlin
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

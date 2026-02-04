@@ -1,0 +1,189 @@
+color: null
+description: null
+fieldLayouts:
+  7d8deb16-121b-469c-b8c8-c0d18dc310dd:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-29T09:38:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b169acdd-3b36-4e75-986a-73938f03732d # Bild
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55fc1e6f-01b4-497b-90b9-956a552ad3a6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-01-28T09:27:22+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Name
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: eb161936-fa69-4cce-8f6c-c72325cc64e3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-29T09:38:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a3d47f12-bb58-46e2-8d17-7017dece69e8 # Zahl
+            handle: weight
+            includeInCards: false
+            instructions: null
+            label: 'Gewicht in Gramm'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f21f9f87-c571-44e6-b5eb-ead4524cc909
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-02-03T09:32:05+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 58d10903-0d11-46d3-9bd5-768c07a9be16 # Lizenz
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b67fe2fc-3028-4423-a67a-180b5a3285e9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-29T09:38:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a3d47f12-bb58-46e2-8d17-7017dece69e8 # Zahl
+            handle: maxFlightTime
+            includeInCards: false
+            instructions: null
+            label: 'Maximale Flugzeit in Minuten'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fefc2a06-c9ac-410f-be75-cb9e8df852e9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-29T09:38:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a3d47f12-bb58-46e2-8d17-7017dece69e8 # Zahl
+            handle: maxSpeed
+            includeInCards: false
+            instructions: null
+            label: 'Höchstgeschwindigkeit m/s'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b62e353-1024-491d-80db-09360b8a8ae8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-29T09:40:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: ipRating
+            includeInCards: false
+            instructions: null
+            label: 'Schutzklasse gegen Wasser'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 35343ef4-580d-4f7a-8c32-1cbb03f78973
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-29T09:38:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b6ecff5b-bd88-4025-9590-9ec7edbe63a9 # Headline
+            handle: battery
+            includeInCards: false
+            instructions: null
+            label: Batterietyp
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92d4e3ea-1e3c-42d1-b1a5-cff04883a24a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-29T09:38:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: a3d47f12-bb58-46e2-8d17-7017dece69e8 # Zahl
+            handle: batteryCapacity
+            includeInCards: false
+            instructions: null
+            label: Batteriekapazität
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 108fe76c-79be-4252-98e9-0780adb4e8ce
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhalt
+        uid: c7b62cbf-9229-4bcf-af85-5048e760ea1d
+        userCondition: null
+handle: droneIndex
+hasTitleField: true
+icon: drone
+name: 'Drone Index'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
